@@ -1,0 +1,12 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    long long a,b,c,d;
+    cin>>a>>b>>c>>d;
+    unsigned long long mul1= (a*b);
+    unsigned long long mul2= (c*d);
+    int l1=mul1%1000;
+    int l2=mul2%1000;
+    int l=(l1*l2)%100;
+    cout << setw(2) << setfill('0')<<l<< endl;
+}
